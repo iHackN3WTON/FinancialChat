@@ -40,6 +40,7 @@
                     $('#sendmessage').click();
                 }
             });
+            getPosts($('#chatroomid').val());
         });
         // Reference the auto-generated proxy for the hub.  
         var chat = $.connection.chatHub;
@@ -47,6 +48,7 @@
             
             // Create a function that the hub can call back to display messages.
             chat.client.addNewMessageToPage = function (time, name, message) {
+                console.log(time, name, message);
                 // Limit to 50 Messages
                 if ($('#discussion li').length >= 50) {
                     $('#discussion li').first().remove();
@@ -70,7 +72,7 @@
                         }
                         // Call the Send method on the hub. 
                         //chat.server.send($('#displayname').val(), $('#message').val(), $('#chatroomname').val());
-                        chat.server.send(messageModel);
+                        chat.server.send(messageModel, $('#chatroomname').val());
                     }
                     // Clear text box and reset focus for next comment. 
                     $('#message').val('').focus();
@@ -87,6 +89,22 @@
         function htmlEncode(value) {
             var encodedValue = $('<div />').text(value).html();
             return encodedValue;
+        }
+
+        // GET the last 50 posts of the chatroom
+        function getPosts(id) {
+            $.ajax({
+                type: 'GET',
+                url: '/api/posts/' + id,
+                data: { get_param: 'value' },
+                dataType: 'json',
+                success: function(data) {
+                    $.each(data, function (index, element) {
+                        $('#discussion').append('<li>(' + htmlEncode(element.dateTime.toLocaleString().replace('T',' ').substr(0, 19).replace('-','/').replace('-','/')) + ') <strong>' + htmlEncode(element.userName) + '</strong>: ' + htmlEncode(element.message) + '</li>');
+                        console.log(element);
+                    });
+                }
+            });
         }
     </script>
 }
