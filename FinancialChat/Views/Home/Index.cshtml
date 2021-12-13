@@ -1,0 +1,36 @@
+﻿@model IEnumerable<FinancialChat.Models.ChatRoom>
+@{
+    ViewBag.Title = "Chat Rooms";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Chat Rooms</h2>
+<p>
+    @Html.ActionLink("New Room","New","Home",null,new {@class = "btn btn-primary" })
+</p>
+
+@foreach (var room in Model)
+{
+    <p>
+    @Html.ActionLink("Enter to room: " + room.Name,"Chat","Home",new {chatRoomID = room.Id, chatRoomName = room.Name}, null)
+    <button class="btn btn-danger js-delete" data-room-id="@room.Id">X</button>
+    </p>
+}
+
+@section scripts
+{
+    <script>
+        $(document).ready(function() {
+            $(".js-delete").on("click",
+                function() {
+                    var button = $(this);
+                    bootbox.confirm("Are you sure you want to delete this ChatRoom?",
+                        function(result) {
+                            if (result) {
+                                window.location.href = '/Home/Delete/' + button.attr("data-room-id");
+                            }
+                        });
+                });
+        })
+    </script>
+}
