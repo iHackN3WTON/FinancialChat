@@ -90,7 +90,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Controllers\HomeControllerTest.cs" />
+    <Compile Include="StockBotUnitTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />
@@ -99,6 +99,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\FinancialChat.StockBot\FinancialChat.StockBot.csproj">
+      <Project>{E48739D9-B714-495E-B27B-CCD76B5FB57E}</Project>
+      <Name>FinancialChat.StockBot</Name>
+    </ProjectReference>
     <ProjectReference Include="..\FinancialChat\FinancialChat.csproj">
       <Project>{B398FE6F-CF0E-417F-846E-5C4A31F86D90}</Project>
       <Name>FinancialChat</Name>
