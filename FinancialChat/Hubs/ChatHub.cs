@@ -61,12 +61,12 @@ namespace FinancialChat.Hubs
         public void JoinRoom(string roomId, string name)
         {
             Groups.Add(Context.ConnectionId, roomId);
-            Clients.Group(roomId, Context.ConnectionId).addNewMessageToPage(DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToLongTimeString(), "", name + " joined the group");
+            Clients.Group(roomId, Context.ConnectionId).addNewMessageToPage(String.Format("{0:yyyy/MM/dd} {0:HH:mm:ss}", DateTime.Now), "", name + " joined the group");
         }
 
         public void LeaveRoom(string roomId,string name)
         {
-            Clients.Group(roomId, Context.ConnectionId).addNewMessageToPage(DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToLongTimeString(), "", name + " leave the group");
+            Clients.Group(roomId, Context.ConnectionId).addNewMessageToPage(String.Format("{0:yyyy/MM/dd} {0:HH:mm:ss}", DateTime.Now), "", name + " leave the group");
             Groups.Remove(Context.ConnectionId, roomId);
         }
     }
