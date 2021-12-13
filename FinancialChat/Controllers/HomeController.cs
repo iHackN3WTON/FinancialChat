@@ -70,8 +70,10 @@ namespace FinancialChat.Controllers
 
             return RedirectToAction("Index", "Home");
         }
-        public ActionResult Chat(int chatRoomId, string chatRoomName)
+        public ActionResult Chat(int chatRoomId = 0, string chatRoomName = "")
         {
+            if (chatRoomId == 0)
+                return RedirectToAction("Index", "Home");
             var chatRoom = new ChatRoomViewModel()
             {
                 Id = chatRoomId,

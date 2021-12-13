@@ -4,9 +4,11 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Web;
+using FinancialChat.Models;
 using Microsoft.AspNet.SignalR;
 using Microsoft.AspNet.SignalR.Hubs;
 using Newtonsoft.Json;
+using Microsoft.AspNet.Identity;
 
 
 namespace FinancialChat.Hubs
@@ -14,23 +16,58 @@ namespace FinancialChat.Hubs
 
     public class ChatHub : Hub
     {
-        public void Send(string name, string message, string roomName)
+        private ApplicationDbContext _context = new ApplicationDbContext();
+        //public void Send(string name, string message, string room)
+        //{
+        //    message = message.Trim();
+        //    var roomId = int.Parse(room);
+        //    if (message.Substring(0, 1).Equals("/"))
+        //    {
+        //        if (message.Substring(0, 7).ToLower().Equals("/stock="))
+        //        {
+        //            var stockBot = new StockBot.StockBot();
+        //            var command = message.Substring(7).Trim();
+        //            var stock = stockBot.RequestStock(command);
+        //            Clients.Caller.addNewMessageToPage(DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToLongTimeString(), "Chat bot", stock);
+        //        }else if (message.Substring(0, 8).ToLower().Equals("/stock ="))
+        //        {
+        //            var stockBot = new StockBot.StockBot();
+        //            var command = message.Substring(8).Trim();
+        //            var stock = stockBot.RequestStock(command);
+        //            Clients.Caller.addNewMessageToPage(DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToLongTimeString(), "Chat bot", stock);
+        //        }
+        //        else
+        //        {
+        //            Clients.Caller.addNewMessageToPage(DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToLongTimeString(), "Chat bot", "Unknown command");
+        //        }
+        //    }
+        //    else
+        //    {
+        //        Clients.Group(room).addNewMessageToPage(DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToLongTimeString(), name, message);
+        //        var post = new Post()
+        //        {
+        //            DateTime = DateTime.Now,
+        //            RoomId = int.Parse(room),
+        //            RoomName = _context.ChatRooms.Any(r => r.Id == roomId) ? _context.ChatRooms.Single(r => r.Id == roomId).Name : "",
+        //            UserId = User.Identity.GetUserId();
+        //        };
+        //    }
+        //}
+        public void Send(MessageModel messageModel)
         {
-            // Call the addNewMessageToPage method to update clients.
-            // Clients.All.addNewMessageToPage(DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToLongTimeString(), name, message);
-
-            if (message.Substring(0, 1).Equals("/"))
+            messageModel.Message = messageModel.Message.Trim();
+            if (messageModel.Message.Substring(0, 1).Equals("/"))
             {
-                if (message.Substring(0, 7).ToLower().Equals("/stock="))
+                if (messageModel.Message.Substring(0, 7).ToLower().Equals("/stock="))
                 {
                     var stockBot = new StockBot.StockBot();
-                    var command = message.Substring(7).Trim();
+                    var command = messageModel.Message.Substring(7).Trim();
                     var stock = stockBot.RequestStock(command);
                     Clients.Caller.addNewMessageToPage(DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToLongTimeString(), "Chat bot", stock);
-                }else if (message.Substring(0, 8).ToLower().Equals("/stock ="))
+                }else if (messageModel.Message.Substring(0, 8).ToLower().Equals("/stock ="))
                 {
                     var stockBot = new StockBot.StockBot();
-                    var command = message.Substring(8).Trim();
+                    var command = messageModel.Message.Substring(8).Trim();
                     var stock = stockBot.RequestStock(command);
                     Clients.Caller.addNewMessageToPage(DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToLongTimeString(), "Chat bot", stock);
                 }
@@ -41,14 +78,25 @@ namespace FinancialChat.Hubs
             }
             else
             {
-                Clients.Group(roomName).addNewMessageToPage(DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToLongTimeString(), name, message);
+                Clients.Group(messageModel.RoomId.ToString()).addNewMessageToPage(DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToLongTimeString(), messageModel.UserName, messageModel.Message);
+                var post = new Post()
+                {
+                    DateTime = DateTime.Now,
+                    RoomId = int.Parse(messageModel.RoomId),
+                    RoomName = messageModel.RoomName,
+                    UserId = messageModel.UserId,
+                    UserName = messageModel.UserName,
+                    Message = messageModel.Message
+                };
+                _context.Posts.Add(post);
+                _context.SaveChanges();
             }
         }
 
-        public void JoinRoom(string roomName, string name)
+        public void JoinRoom(string roomId, string name)
         {
-            Groups.Add(Context.ConnectionId, roomName);
-            Clients.Group(roomName, Context.ConnectionId).addNewMessageToPage(DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToLongTimeString(), "", name + " joined the group");
+            Groups.Add(Context.ConnectionId, roomId);
+            Clients.Group(roomId, Context.ConnectionId).addNewMessageToPage(DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToLongTimeString(), "", name + " joined the group");
         }
 
         public void LeaveRoom(string roomName,string name)

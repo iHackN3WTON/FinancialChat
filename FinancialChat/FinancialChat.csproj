@@ -196,6 +196,18 @@
     <Compile Include="Migrations\202112122106429_AddedChatRooms.Designer.cs">
       <DependentUpon>202112122106429_AddedChatRooms.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202112130331231_Post.cs" />
+    <Compile Include="Migrations\202112130331231_Post.Designer.cs">
+      <DependentUpon>202112130331231_Post.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202112130400523_PostMessage.cs" />
+    <Compile Include="Migrations\202112130400523_PostMessage.Designer.cs">
+      <DependentUpon>202112130400523_PostMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202112130406123_PostUserId.cs" />
+    <Compile Include="Migrations\202112130406123_PostUserId.Designer.cs">
+      <DependentUpon>202112130406123_PostUserId.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDBContext.cs" />
@@ -298,6 +310,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202112122106429_AddedChatRooms.resx">
       <DependentUpon>202112122106429_AddedChatRooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112130331231_Post.resx">
+      <DependentUpon>202112130331231_Post.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112130400523_PostMessage.resx">
+      <DependentUpon>202112130400523_PostMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112130406123_PostUserId.resx">
+      <DependentUpon>202112130406123_PostUserId.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

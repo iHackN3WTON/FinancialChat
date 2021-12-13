@@ -8,10 +8,10 @@ namespace FinancialChat.Models
 {
     public class MessageModel
     {
-        [JsonProperty("userid")] public int UserId { get; set; }
-        [JsonProperty("name")] public string Name { get; set; }
-        [JsonProperty("roomid")] public long RoomId { get; set; }
-        [JsonProperty("room")] public string Room { get; set; }
+        [JsonProperty("userid")] public string UserId { get; set; }
+        [JsonProperty("username")] public string UserName { get; set; }
+        [JsonProperty("roomid")] public string RoomId { get; set; }
+        [JsonProperty("roomname")] public string RoomName { get; set; }
         [JsonProperty("message")] public string Message { get; set; }
 
     }

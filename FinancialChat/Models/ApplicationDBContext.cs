@@ -10,6 +10,7 @@ namespace FinancialChat.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public DbSet<ChatRoom> ChatRooms { get; set; }
+        public DbSet<Post> Posts { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {

@@ -61,8 +61,16 @@
                 $('#sendmessage').click(function () {
                     // Avoid to send empty messages
                     if ($('#message').val().localeCompare('') !== 0) {
+                        var messageModel = {
+                            userid: $('#userid').val(),
+                            username: $('#displayname').val(),
+                            roomid: $('#chatroomid').val(),
+                            roomname: $('#chatroomname').val(),
+                            message: $('#message').val()
+                        }
                         // Call the Send method on the hub. 
-                        chat.server.send($('#displayname').val(), $('#message').val(), $('#chatroomname').val());
+                        //chat.server.send($('#displayname').val(), $('#message').val(), $('#chatroomname').val());
+                        chat.server.send(messageModel);
                     }
                     // Clear text box and reset focus for next comment. 
                     $('#message').val('').focus();
