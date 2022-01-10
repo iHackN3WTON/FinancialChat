@@ -81,5 +81,17 @@ namespace FinancialChat.Controllers
             };
             return View(chatRoom);
         }
+
+        public ActionResult AngularChat(int chatRoomId = 0, string chatRoomName = "")
+        {
+            if (chatRoomId == 0)
+                return RedirectToAction("Index", "Home");
+            var chatRoom = new ChatRoomViewModel()
+            {
+                Id = chatRoomId,
+                Name = chatRoomName
+            };
+            return View(chatRoom);
+        }
     }
 }

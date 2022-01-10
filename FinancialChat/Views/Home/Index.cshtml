@@ -13,6 +13,7 @@
 {
     <p>
     @Html.ActionLink("Enter to room: " + room.Name,"Chat","Home",new {chatRoomID = room.Id, chatRoomName = room.Name}, null)
+    @Html.ActionLink("Angular Version", "AngularChat","Home", new {chatRoomID = room.Id, chatRoomName = room.Name},new {@class = "btn btn-primary" })
     <button class="btn btn-danger js-delete" data-room-id="@room.Id">X</button>
     </p>
 }

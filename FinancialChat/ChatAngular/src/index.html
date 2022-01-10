@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ChatAngular</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+</head>
+<body>
+  <input type="hidden" id="userid" value="03400a2e-eabf-4a2f-8f27-f67d542f6b42"/>
+  <input type="hidden" id="displayname" value="Abner Lopez"/>
+  <input type="hidden" id="chatroomid" value="1"/>
+  <input type="hidden" id="chatroomname" value="Default"/>  
+  <app-root></app-root>
+  
+  <script>//This button is only for test purposes</script>
+  <button id="btnIndexToggle" class="btn btn-primary">Simulate receiving Message from backend</button>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script>
+    //The script of this button is for reference purposes
+    $(document).ready(function() {
+        $('#btnIndexToggle').click(function() {
+          receiveMessage(new Date().toISOString(), $('#displayname').val(), $('#message').val());
+        })
+    });
+
+    // This function sends the data from Angular to the backend
+    function sendMessage(message) {
+      //TO-DO: Add here the script to send message to backend
+    }
+
+    // This function receive the data from the backend and then send it to Angular
+    function receiveMessage(time, name, message) {
+      window.angularComponentReference.zone.run(() => { window.angularComponentReference.loadAngularFunction(time, name, message); });
+    }
+  </script>
+</body>
+</html>

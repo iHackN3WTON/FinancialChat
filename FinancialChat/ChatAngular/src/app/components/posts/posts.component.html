@@ -1,0 +1,5 @@
+<app-header></app-header>
+<ul>
+    <app-post-item *ngFor="let post of posts" [post]="post"></app-post-item>
+</ul>
+<app-add-post (onAddPost)="addNewPost($event)"></app-add-post>

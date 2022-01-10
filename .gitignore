@@ -260,3 +260,4 @@ paket-files/
 __pycache__/
 *.pyc
 /FinancialChat/Properties/PublishProfiles/CustomProfile.pubxml
+/FinancialChat/Scripts/chatAngular

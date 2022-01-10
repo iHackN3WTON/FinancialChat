@@ -1,0 +1,10 @@
+<form (ngSubmit)="onSubmit()">
+  <div class="form-horizontal">
+    <div class="form-group">
+      <div class="col-md-6 form-inline">
+        <input type="text" name="message" [(ngModel)]="message" id="message" class="form-control" placeholder="Type your message"/>
+        <input type="submit" value="Send" class="btn btn-primary" />
+      </div>
+    </div>
+  </div>
+</form>

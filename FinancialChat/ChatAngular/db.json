@@ -1,0 +1,454 @@
+{
+    "posts": [
+        {
+        "id": 11,
+        "dateTime": "2021-12-13T10:13:09.437",
+        "userId": "03400a2e-eabf-4a2f-8f27-f67d542f6b42",
+        "userName": "Abner Lopez",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "Vos que no avisas"
+        },
+        {
+        "id": 12,
+        "dateTime": "2021-12-13T10:13:15.913",
+        "userId": "d31d9ebf-add8-49e7-918b-11691309917f",
+        "userName": "Rigoberto Diaz",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "Vi que habia una opcion que decia new room.?"
+        },
+        {
+        "id": 13,
+        "dateTime": "2021-12-13T10:13:33.153",
+        "userId": "03400a2e-eabf-4a2f-8f27-f67d542f6b42",
+        "userName": "Abner Lopez",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "aja, los room son infinitos"
+        },
+        {
+        "id": 14,
+        "dateTime": "2021-12-13T10:13:45.17",
+        "userId": "03400a2e-eabf-4a2f-8f27-f67d542f6b42",
+        "userName": "Abner Lopez",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "escribe /stock=aapl.us"
+        },
+        {
+        "id": 15,
+        "dateTime": "2021-12-13T10:16:01.997",
+        "userId": "d31d9ebf-add8-49e7-918b-11691309917f",
+        "userName": "Rigoberto Diaz",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "Cabal, desplega la info"
+        },
+        {
+        "id": 16,
+        "dateTime": "2021-12-13T10:17:15.177",
+        "userId": "03400a2e-eabf-4a2f-8f27-f67d542f6b42",
+        "userName": "Abner Lopez",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "Los datos salen de la pagina https://stooq.com"
+        },
+        {
+        "id": 17,
+        "dateTime": "2021-12-13T10:17:28.913",
+        "userId": "03400a2e-eabf-4a2f-8f27-f67d542f6b42",
+        "userName": "Abner Lopez",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "Alli puedes probar con otras compañías"
+        },
+        {
+        "id": 18,
+        "dateTime": "2021-12-13T10:18:12.65",
+        "userId": "03400a2e-eabf-4a2f-8f27-f67d542f6b42",
+        "userName": "Abner Lopez",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "Como msft.us, btc.v"
+        },
+        {
+        "id": 19,
+        "dateTime": "2021-12-13T10:18:58.863",
+        "userId": "d31d9ebf-add8-49e7-918b-11691309917f",
+        "userName": "Rigoberto Diaz",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "Es como una pagina de tradding"
+        },
+        {
+        "id": 20,
+        "dateTime": "2021-12-13T10:19:18.06",
+        "userId": "d31d9ebf-add8-49e7-918b-11691309917f",
+        "userName": "Rigoberto Diaz",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "*trading"
+        },
+        {
+        "id": 21,
+        "dateTime": "2021-12-13T10:19:24.177",
+        "userId": "03400a2e-eabf-4a2f-8f27-f67d542f6b42",
+        "userName": "Abner Lopez",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "ahorita estoy por celular"
+        },
+        {
+        "id": 22,
+        "dateTime": "2021-12-13T10:19:41.517",
+        "userId": "03400a2e-eabf-4a2f-8f27-f67d542f6b42",
+        "userName": "Abner Lopez",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "cabal de stock and trading"
+        },
+        {
+        "id": 23,
+        "dateTime": "2021-12-13T10:23:34.367",
+        "userId": "d31d9ebf-add8-49e7-918b-11691309917f",
+        "userName": "Rigoberto Diaz",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "Ayer lo enviaste.?"
+        },
+        {
+        "id": 24,
+        "dateTime": "2021-12-13T10:26:37.123",
+        "userId": "03400a2e-eabf-4a2f-8f27-f67d542f6b42",
+        "userName": "Abner Lopez",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "cabal casi a media noche"
+        },
+        {
+        "id": 25,
+        "dateTime": "2021-12-13T10:27:02.8",
+        "userId": "03400a2e-eabf-4a2f-8f27-f67d542f6b42",
+        "userName": "Abner Lopez",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "después lo monté aquí casi a la 1am"
+        },
+        {
+        "id": 26,
+        "dateTime": "2021-12-13T19:31:02.28",
+        "userId": "03400a2e-eabf-4a2f-8f27-f67d542f6b42",
+        "userName": "Abner Lopez",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "Hello"
+        },
+        {
+        "id": 27,
+        "dateTime": "2021-12-13T19:31:11.097",
+        "userId": "a3d39a8d-5ba6-452c-9ca2-808de8d7e271",
+        "userName": "Angie",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "Hello"
+        },
+        {
+        "id": 28,
+        "dateTime": "2021-12-13T19:31:41.187",
+        "userId": "03400a2e-eabf-4a2f-8f27-f67d542f6b42",
+        "userName": "Abner Lopez",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "write /stock=aapl.us"
+        },
+        {
+        "id": 29,
+        "dateTime": "2021-12-13T21:04:46.723",
+        "userId": "a3d39a8d-5ba6-452c-9ca2-808de8d7e271",
+        "userName": "Angie",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "write /stock=aapl.us"
+        },
+        {
+        "id": 31,
+        "dateTime": "2021-12-14T16:40:45.227",
+        "userId": "0fd4267b-fdae-4e8c-8ad9-d19239c961a6",
+        "userName": "George",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "Test message"
+        },
+        {
+        "id": 32,
+        "dateTime": "2021-12-14T16:57:59.537",
+        "userId": "0fd4267b-fdae-4e8c-8ad9-d19239c961a6",
+        "userName": "George",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "This is 31"
+        },
+        {
+        "id": 33,
+        "dateTime": "2021-12-14T16:59:21.59",
+        "userId": "0fd4267b-fdae-4e8c-8ad9-d19239c961a6",
+        "userName": "George",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "."
+        },
+        {
+        "id": 34,
+        "dateTime": "2021-12-14T16:59:22.053",
+        "userId": "0fd4267b-fdae-4e8c-8ad9-d19239c961a6",
+        "userName": "George",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "."
+        },
+        {
+        "id": 35,
+        "dateTime": "2021-12-14T16:59:22.52",
+        "userId": "0fd4267b-fdae-4e8c-8ad9-d19239c961a6",
+        "userName": "George",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "."
+        },
+        {
+        "id": 36,
+        "dateTime": "2021-12-14T16:59:22.957",
+        "userId": "0fd4267b-fdae-4e8c-8ad9-d19239c961a6",
+        "userName": "George",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "."
+        },
+        {
+        "id": 37,
+        "dateTime": "2021-12-14T16:59:23.387",
+        "userId": "0fd4267b-fdae-4e8c-8ad9-d19239c961a6",
+        "userName": "George",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "."
+        },
+        {
+        "id": 38,
+        "dateTime": "2021-12-14T16:59:23.773",
+        "userId": "0fd4267b-fdae-4e8c-8ad9-d19239c961a6",
+        "userName": "George",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "."
+        },
+        {
+        "id": 39,
+        "dateTime": "2021-12-14T16:59:24.153",
+        "userId": "0fd4267b-fdae-4e8c-8ad9-d19239c961a6",
+        "userName": "George",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "."
+        },
+        {
+        "id": 40,
+        "dateTime": "2021-12-14T16:59:24.533",
+        "userId": "0fd4267b-fdae-4e8c-8ad9-d19239c961a6",
+        "userName": "George",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "."
+        },
+        {
+        "id": 41,
+        "dateTime": "2021-12-14T16:59:24.93",
+        "userId": "0fd4267b-fdae-4e8c-8ad9-d19239c961a6",
+        "userName": "George",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "."
+        },
+        {
+        "id": 42,
+        "dateTime": "2021-12-14T16:59:25.337",
+        "userId": "0fd4267b-fdae-4e8c-8ad9-d19239c961a6",
+        "userName": "George",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "."
+        },
+        {
+        "id": 43,
+        "dateTime": "2021-12-14T16:59:25.723",
+        "userId": "0fd4267b-fdae-4e8c-8ad9-d19239c961a6",
+        "userName": "George",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "."
+        },
+        {
+        "id": 44,
+        "dateTime": "2021-12-14T16:59:26.127",
+        "userId": "0fd4267b-fdae-4e8c-8ad9-d19239c961a6",
+        "userName": "George",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "."
+        },
+        {
+        "id": 45,
+        "dateTime": "2021-12-14T16:59:26.5",
+        "userId": "0fd4267b-fdae-4e8c-8ad9-d19239c961a6",
+        "userName": "George",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "."
+        },
+        {
+        "id": 46,
+        "dateTime": "2021-12-14T16:59:26.867",
+        "userId": "0fd4267b-fdae-4e8c-8ad9-d19239c961a6",
+        "userName": "George",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "."
+        },
+        {
+        "id": 47,
+        "dateTime": "2021-12-14T16:59:27.23",
+        "userId": "0fd4267b-fdae-4e8c-8ad9-d19239c961a6",
+        "userName": "George",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "."
+        },
+        {
+        "id": 48,
+        "dateTime": "2021-12-14T16:59:27.593",
+        "userId": "0fd4267b-fdae-4e8c-8ad9-d19239c961a6",
+        "userName": "George",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "."
+        },
+        {
+        "id": 49,
+        "dateTime": "2021-12-14T16:59:27.967",
+        "userId": "0fd4267b-fdae-4e8c-8ad9-d19239c961a6",
+        "userName": "George",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "."
+        },
+        {
+        "id": 50,
+        "dateTime": "2021-12-14T16:59:28.327",
+        "userId": "0fd4267b-fdae-4e8c-8ad9-d19239c961a6",
+        "userName": "George",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "."
+        },
+        {
+        "id": 51,
+        "dateTime": "2021-12-14T16:59:28.663",
+        "userId": "0fd4267b-fdae-4e8c-8ad9-d19239c961a6",
+        "userName": "George",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "."
+        },
+        {
+        "id": 52,
+        "dateTime": "2021-12-14T16:59:28.983",
+        "userId": "0fd4267b-fdae-4e8c-8ad9-d19239c961a6",
+        "userName": "George",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "."
+        },
+        {
+        "id": 53,
+        "dateTime": "2021-12-14T16:59:29.307",
+        "userId": "0fd4267b-fdae-4e8c-8ad9-d19239c961a6",
+        "userName": "George",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "."
+        },
+        {
+        "id": 54,
+        "dateTime": "2021-12-14T16:59:29.813",
+        "userId": "0fd4267b-fdae-4e8c-8ad9-d19239c961a6",
+        "userName": "George",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "."
+        },
+        {
+        "id": 55,
+        "dateTime": "2021-12-14T16:59:30.217",
+        "userId": "0fd4267b-fdae-4e8c-8ad9-d19239c961a6",
+        "userName": "George",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "."
+        },
+        {
+        "id": 56,
+        "dateTime": "2021-12-14T16:59:30.863",
+        "userId": "0fd4267b-fdae-4e8c-8ad9-d19239c961a6",
+        "userName": "George",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": ".."
+        },
+        {
+        "id": 57,
+        "dateTime": "2021-12-14T16:59:31.22",
+        "userId": "0fd4267b-fdae-4e8c-8ad9-d19239c961a6",
+        "userName": "George",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "."
+        },
+        {
+        "id": 58,
+        "dateTime": "2021-12-14T16:59:31.5",
+        "userId": "0fd4267b-fdae-4e8c-8ad9-d19239c961a6",
+        "userName": "George",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "."
+        },
+        {
+        "id": 59,
+        "dateTime": "2021-12-14T16:59:31.837",
+        "userId": "0fd4267b-fdae-4e8c-8ad9-d19239c961a6",
+        "userName": "George",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "."
+        },
+        {
+        "id": 60,
+        "dateTime": "2021-12-14T16:59:32.623",
+        "userId": "0fd4267b-fdae-4e8c-8ad9-d19239c961a6",
+        "userName": "George",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "."
+        },
+        {
+        "id": 62,
+        "dateTime": "2021-12-20T17:11:26.383",
+        "userId": "03400a2e-eabf-4a2f-8f27-f67d542f6b42",
+        "userName": "Abner Lopez",
+        "roomId": 1,
+        "roomName": "Default",
+        "message": "Hola Dr"
+        }
+    ]
+}
