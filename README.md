@@ -74,7 +74,7 @@ The project is compiled in the path /FinancialChat/FinancialChat/Scripts/
 
 The Angular SPA is ready.
 
-### Compile and Run
+### Compile and Run and Excecute
 
 When you have the database and the Angular SPA ready, you can run the Web Application, in Visual Studio press F5 to run the application.
 
